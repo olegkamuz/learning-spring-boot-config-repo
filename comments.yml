@@ -33,8 +33,6 @@ spring:
         output:
           destination: learning-spring-boot-comments
           group: learning-spring-boot
-  application:
-    name: comments
 eureka:
   client:
     serviceUrl:
