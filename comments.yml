@@ -29,10 +29,12 @@ spring:
       bindings:
         input:
           destination: learning-spring-boot-comments
-          group: learning-spring-boot
+          group: comments-service
+          content-type: application/json
         output:
-          destination: learning-spring-boot-comments
-          group: learning-spring-boot
+          destination: learning-spring-boot-chat
+          group: comments-chat
+          content-type: application/json
 eureka:
   client:
     serviceUrl:
